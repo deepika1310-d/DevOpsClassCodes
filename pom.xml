@@ -310,7 +310,8 @@
                         <artifactId>maven-site-plugin</artifactId>
                         <version>3.3</version>
                         <configuration>
-                            <reportPlugins>
+                            <reporting>
+                             <plugins>
                                 <plugin>
                                     <artifactId>maven-project-info-reports-plugin</artifactId>
                                     <version>2.7</version>
@@ -394,7 +395,8 @@
                                     <artifactId>maven-jxr-plugin</artifactId>
                                     <version>2.4</version>
                                 </plugin>
-                            </reportPlugins>
+			     </plugins>
+			    </reporting>
                         </configuration>
                         <dependencies>
                             <dependency>
