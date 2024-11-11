@@ -23,13 +23,6 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
         </properties>
-   <dependencies>
-    <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-utils</artifactId>
-        <version>3.2.1</version> <!-- Ensure you use a compatible version -->
-    </dependency>
-   </dependencies>
 
     <repositories>
         <repository>
@@ -177,7 +170,11 @@
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.8.6</version>
 </dependency>
-
+    <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-utils</artifactId>
+        <version>3.2.1</version> <!-- Ensure you use a compatible version -->
+    </dependency>
 		</dependencies>
 
     <build>
