@@ -23,6 +23,13 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
         </properties>
+   <dependencies>
+    <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-utils</artifactId>
+        <version>3.2.1</version> <!-- Ensure you use a compatible version -->
+    </dependency>
+   </dependencies>
 
     <repositories>
         <repository>
@@ -321,9 +328,10 @@
 		    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
-                        <version>3.4.0</version>
+                        <version>3.10.1</version>
 			<configuration>
-                            <failOnMissingWebXml>false</failOnMissingWebXml>
+                            <source>21</source>
+                            <target>21</target>
                         </configuration>
                     </plugin>
 
